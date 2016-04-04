@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+#header{
+    margin-top:15px;
+}
+
+#footer{
+    padding:20px 0 !important;
+    bottom:0px!important;
+    margin-top:40px;
+}
+.section{
+    padding-top:40px;
+    padding-bottom:40px;
+    min-height:200px;
+}
+#main, #shareholders {
+    background: url("/images/escheresque.png");
+}
+h1, h2, h3{
+    text-align:center;
+    color:#113445;
+}
+#press h2 {
+    text-align:left;
+    color:#113445;
+}
+a {
+    color:#385E70;
+}
+#contact p {
+    font-size:13px;
+
+}
+.project-summary {
+    padding:10px;
+}
+.project-image {
+    height:220px;
+    border-radius:2px;
+}
+p {
+    font-size:16px;
+    color:#385E70;
+}
+h4{
+    color: #385E70;
+}
+#contact {
+    background-color: #fff;
+    padding:40px 0;
+}
+#press {
+    background-color: #fff;
+    min-height:400px;
+}
+#details, #directors {
+    background-color: #fff;
+    min-height:400px;
+}
+.navbar{
+    margin-bottom:0px;
+    border-radius: 0px!important;
+}
+#stakeholders .col-md-3{padding-top:40px;}
+.logo-large{
+    height:54px;
+
+}
+.navbar-brand{
+    padding:5px 15px;
+    margin-top:-20px
+}
+.navbar-nav li a {
+    font-size:20px;
+}
+/*body{background-color:#113445}*/
+/*.logo-color {*/
+    /*color:#385E70*/
+/*}*/
+
+/*palette*/
+.marine{color: #385E70!important}
+.light-yellow{color: #D5BF84}
+.yellow{color: #b19754}
+.red{color: #b16754}
+.dark-marine{color: #113445}
+.light-marine{color: #7E97A3}
+.marine-bg{background-color: #385E70}
+.light-yellow-bg{background-color: #D5BF84}
+.yellow-bg{background-color: #b19754}
+.red-bg{background-color: #b16754}
+.dark-marine-bg{background-color: #113445}
+.light-marine-bg{background-color: #7E97A3}
+
+
+.hero-unit {
+    background-image:url('/images/calibishie.jpg');
+    background-size:cover;
+    height:500px;
+    padding:40px;
+
+}
+.hero-unit h1 {
+    /*border:6px solid #385E70;*/
+    background-color: #fff;
+    border-radius: 2px;
+    color: #113445;
+    /*text-align: center;*/
+    font-size: 45px;
+    letter-spacing: -1px;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    /*font-weight: 700;*/
+    margin:90px auto;
+    padding: 15px;
+    opacity:0.7;
+    width:237px;
+    text-align:left;
+}
+.hero-unit h2 {
+    font-size: 25px;
+    color: #FFFFFF;
+
+}
+.fill{width:100%;height:350px;background-position:center;background-size:cover;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle {
+    border-radius: 50%;
+    /* width and height can be anything, as long as they're equal */
+}
+.director-picture {
+    width: 250px;
+    height: 250px;
+}
+.shareholder-picture {
+    width: 150px;
+    height: 150px;
+}
+
+
+
