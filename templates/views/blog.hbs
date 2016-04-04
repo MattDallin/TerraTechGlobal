@@ -1,28 +1,30 @@
 <div class="hero-unit">
   <h1>TERRA TECH GLOBAL</h1>
 </div>
-<div id="press">
-<div class="container">
-	<h1>Press</h1>
+<div id="main" class="section">
+  <div class="container">
+    <h1>Press</h1>
+  </div>
 </div>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-8 col-md-8 col-md-offset-2">
-          <h4 class="text-weight-normal">{{#if data.posts.results.length}}{{else}}Nothing to show{{/if}}</h4>
-			<div class="blog">
-				{{# each data.posts.results}}
-				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
-					<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
-					<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}
-							<!--{{#if author.name.first}}by {{author.name.first}}{{/if}}-->
-					</p>
-					<p>{{{content.extended}}}</p>
-					<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
-				</div>
-				{{/each}}
-			</div>
-            {{>pagination}}
+<div id="press">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-8 col-md-offset-2">
+        <h4 class="text-weight-normal">{{#if data.posts.results.length}}{{else}}Nothing to show{{/if}}</h4>
+        <div class="blog">
+            {{# each data.posts.results}}
+              <div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+                <h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
+                <p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}
+                  <!--{{#if author.name.first}}by {{author.name.first}}{{/if}}-->
+                </p>
+                <p>{{{content.extended}}}</p>
+                <p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
+              </div>
+            {{/each}}
         </div>
+          {{>pagination}}
+      </div>
       <!--<div class="col-sm-4 col-md-3">-->
       <!--<h2>Categories</h2>-->
       <!--<div style="margin-top: 70px;" class="list-group">-->
@@ -33,5 +35,5 @@
       <!--</div>-->
       <!--</div>-->
     </div>
-</div>
+  </div>
 </div>
