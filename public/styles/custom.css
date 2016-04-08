@@ -96,7 +96,7 @@ h4{
 .hero-unit {
     background-image:url('/images/calibishie.jpg');
     background-size:cover;
-    height:500px;
+    height:400px;
     padding:40px;
 
 }
@@ -111,7 +111,7 @@ h4{
     line-height: 1;
     font-family: 'Montserrat', sans-serif;
     /*font-weight: 700;*/
-    margin:90px auto;
+    margin:70px auto;
     padding: 15px;
     opacity:0.7;
     width:237px;

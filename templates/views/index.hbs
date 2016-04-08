@@ -14,27 +14,21 @@
   <div class="container">
     <h1>Projects</h1>
     <div class="row">
-      <div class="col-md-6">
-        <div class="project-summary">
-          <hr />
-          <h4>Mercury Recovery</h4>
-            <div class="project-image red-bg"></div>
-          <p>Alcatra tri-tip shoulder short loin. Salami pastrami capicola, pork loin biltong swine turducken spare ribs shank andouille flank ham hock pig pancetta alcatra.</p>
-          <div class="btn">Learn More ></div>
-        </div>
-      </div>
-      <div class="col-md-6">
-
-        <div class="project-summary">
-          <hr />
-          <h4>Artifact Recovery</h4>
-          <div class="project-image marine-bg"></div>
-          <p>Shankle doner short loin pork belly beef ribeye bresaola capicola frankfurter brisket.</p>
-          <div class="btn block-center">Learn More ></div>
-
-
-        </div>
-      </div>
+        {{# each data.projects}}
+          <div class="col-md-6">
+            <div class="project-summary">
+              <hr />
+              <h4><a href="/projects/{{slug}}">{{{title}}}</a></h4>
+                {{#if image.url }}
+                  <img class="project-image center-block" src="{{image.url}}"/>
+                {{else}}
+                  <div class="project-image marine-bg"></div>
+                {{/if}}
+              <p>{{{content.brief}}}</p>
+              <div class="btn"><a href="/projects/{{slug}}">Learn More ></a></div>
+            </div>
+          </div>
+        {{/each}}
     </div>
   </div>
 </div>

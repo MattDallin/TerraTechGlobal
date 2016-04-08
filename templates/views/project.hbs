@@ -1,0 +1,14 @@
+<div class="hero-unit">
+  <h1>TERRA TECH GLOBAL</h1>
+</div>
+<div id="main" class="section">
+  <div class="container">
+    <h1>{{data.project.title}}</h1>
+  </div>
+</div>
+<div id="details" class="section">
+  <div class="container">
+      {{#if data.project.image.url}}<img class="center-block" style="margin:20px auto" src="{{data.project.image.url}}">{{/if}}
+      {{{data.project.content.extended}}}
+  </div>
+</div>
