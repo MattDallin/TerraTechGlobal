@@ -5,8 +5,8 @@
 
 <div id="main" class="section">
   <div class="container">
-    <p>Chuck jowl pork chop pancetta ham. Biltong pig pork belly, turkey turducken tenderloin spare ribs jerky chuck salami. Fatback ham meatloaf pork loin sirloin. Alcatra t-bone prosciutto, salami frankfurter kielbasa pastrami hamburger. Pork chicken pastrami salami flank, frankfurter biltong shoulder bacon hamburger ribeye. Kielbasa sausage sirloin ball tip swine cupim, hamburger tongue shankle doner pork loin short ribs pastrami. Biltong shoulder doner bresaola, chuck strip steak pork.</p>
-    <p>Fatback cupim tongue ham capicola pastrami cow pork belly kielbasa chuck biltong brisket. Frankfurter pig swine, ham hock shankle venison cow sausage. Tail salami boudin tri-tip bresaola, chuck cupim shoulder picanha shankle sirloin porchetta leberkas tongue. Fatback capicola ham hock, drumstick alcatra picanha pork loin ribeye shank spare ribs pig.</p>
+    <!--<p>Chuck jowl pork chop pancetta ham. Biltong pig pork belly, turkey turducken tenderloin spare ribs jerky chuck salami. Fatback ham meatloaf pork loin sirloin. Alcatra t-bone prosciutto, salami frankfurter kielbasa pastrami hamburger. Pork chicken pastrami salami flank, frankfurter biltong shoulder bacon hamburger ribeye. Kielbasa sausage sirloin ball tip swine cupim, hamburger tongue shankle doner pork loin short ribs pastrami. Biltong shoulder doner bresaola, chuck strip steak pork.</p>-->
+    <!--<p>Fatback cupim tongue ham capicola pastrami cow pork belly kielbasa chuck biltong brisket. Frankfurter pig swine, ham hock shankle venison cow sausage. Tail salami boudin tri-tip bresaola, chuck cupim shoulder picanha shankle sirloin porchetta leberkas tongue. Fatback capicola ham hock, drumstick alcatra picanha pork loin ribeye shank spare ribs pig.</p>-->
   </div>
 </div>
 
@@ -20,9 +20,7 @@
               <hr />
               <h4><a href="/projects/{{slug}}">{{{title}}}</a></h4>
                 {{#if image.url }}
-                  <img class="project-image center-block" src="{{image.url}}"/>
-                {{else}}
-                  <div class="project-image marine-bg"></div>
+                  <img class="project-image center-block" title="{{data.project.imageCredit}}" src="{{image.url}}"/>
                 {{/if}}
               <p>{{{content.brief}}}</p>
               <div class="btn"><a href="/projects/{{slug}}">Learn More ></a></div>

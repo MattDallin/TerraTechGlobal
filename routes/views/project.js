@@ -22,7 +22,6 @@ exports = module.exports = function(req, res) {
 			slug: locals.filters.project
 		});
     q.exec(function(err, result) {
-      console.log(result);
 			locals.data.project = result;
 			next(err);
 		});

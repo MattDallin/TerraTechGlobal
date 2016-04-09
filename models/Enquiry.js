@@ -51,7 +51,7 @@ Enquiry.schema.methods.sendNotificationEmail = function(callback) {
 			to: admins,
 			from: {
 				name: 'Terra Tech Global',
-				email: 'terratechglobal@gmail.com'
+				email: 'ken@terratechglobal.com'
 			},
 			subject: 'New Enquiry for Terra Tech Global',
 			enquiry: enquiry

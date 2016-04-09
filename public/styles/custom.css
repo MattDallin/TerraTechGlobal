@@ -35,7 +35,7 @@ a {
     padding:10px;
 }
 .project-image {
-    height:220px;
+    width:100%;
     border-radius:2px;
 }
 p {
@@ -154,7 +154,6 @@ h4{
     width: 150px;
     height: 150px;
 }
-
 
 .contact-form{
     margin-bottom:40px;

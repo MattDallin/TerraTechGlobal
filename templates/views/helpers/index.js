@@ -347,7 +347,15 @@ module.exports = function() {
 	
 	_helpers.underscoreFormat = function (obj, underscoreMethod) {
 		return obj._[underscoreMethod].format();
-	}
-	
+	};
+
+  _helpers.ifEq = function(a, b, opts) {
+    if(a == b) // Or === depending on your needs
+      return opts.fn(this);
+    else
+      return opts.inverse(this);
+  };
+
+
 	return _helpers;
 };
