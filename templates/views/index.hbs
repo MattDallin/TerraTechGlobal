@@ -7,18 +7,18 @@
   <div class="container">
     <!--<p>Chuck jowl pork chop pancetta ham. Biltong pig pork belly, turkey turducken tenderloin spare ribs jerky chuck salami. Fatback ham meatloaf pork loin sirloin. Alcatra t-bone prosciutto, salami frankfurter kielbasa pastrami hamburger. Pork chicken pastrami salami flank, frankfurter biltong shoulder bacon hamburger ribeye. Kielbasa sausage sirloin ball tip swine cupim, hamburger tongue shankle doner pork loin short ribs pastrami. Biltong shoulder doner bresaola, chuck strip steak pork.</p>-->
     <!--<p>Fatback cupim tongue ham capicola pastrami cow pork belly kielbasa chuck biltong brisket. Frankfurter pig swine, ham hock shankle venison cow sausage. Tail salami boudin tri-tip bresaola, chuck cupim shoulder picanha shankle sirloin porchetta leberkas tongue. Fatback capicola ham hock, drumstick alcatra picanha pork loin ribeye shank spare ribs pig.</p>-->
+    <h1>Projects</h1>
   </div>
 </div>
 
 <div id="details" class="section">
   <div class="container">
-    <h1>Projects</h1>
     <div class="row">
         {{# each data.projects}}
           <div class="col-md-6">
             <div class="project-summary">
               <hr />
-              <h4><a href="/projects/{{slug}}">{{{title}}}</a></h4>
+              <h2><a href="/projects/{{slug}}">{{{title}}}</a></h2>
                 {{#if image.url }}
                   <img class="project-image center-block" title="{{imageCredit}}" src="{{image.url}}"/>
                 {{/if}}
